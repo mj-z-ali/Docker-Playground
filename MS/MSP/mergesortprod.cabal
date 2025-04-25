@@ -1,0 +1,18 @@
+cabal-version:   >=1.10
+name:            mergesortprod
+version:         0.1.0.0
+build-type:      Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable mergesortprod
+    import:           warnings
+    main-is:          mergesortprod.hs
+    build-depends:    
+        base,
+        random,
+        bytestring,
+        binary
+    hs-source-dirs:   .
+    default-language: Haskell2010
